@@ -103,6 +103,11 @@
             bindings = <&kp LC(V)>;
             key-positions = <23 24>;
         };
+
+        l_tab {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+        };
     };
 
     keymap {
@@ -113,22 +118,21 @@
         Main {
             label = "MAIN";
             bindings = <
-                         &kp Q  &kp W  &kp F  &kp P  &kp G        &kp J  &kp L  &kp U                &kp Y             &mt QUESTION EXCLAMATION
-                         &kp A  &kp R  &kp S  &kp T  &kp D        &kp H  &kp N  &kp E                &kp I             &kp O
-&mt LEFT_CONTROL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp K  &kp M  &mt SEMICOLON COMMA  &mt COLON PERIOD  &mt BACKSLASH SLASH       &mt DOUBLE_QUOTES SINGLE_QUOTE
-                                       &none  &to 2  &kp SPACE    &none  &to 1  &kp RIGHT_GUI
+                         &kp Q  &kp W  &kp F  &kp P  &kp G        &kp J            &kp L  &kp U                &kp Y             &mt QUESTION EXCLAMATION
+                         &kp A  &kp R  &kp S  &kp T  &kp D        &kp H            &kp N  &kp E                &kp I             &kp O
+&mt LEFT_CONTROL ESCAPE  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp K            &kp M  &mt SEMICOLON COMMA  &mt COLON PERIOD  &mt BACKSLASH SLASH       &mt DOUBLE_QUOTES SINGLE_QUOTE
+                                       &mo 3  &to 2  &kp SPACE    &kp RIGHT_SHIFT  &to 1  &kp RIGHT_GUI
             >;
         };
 
-        Navegation {
-            bindings = <
-             &none  &none           &kp UP_ARROW    &none            &kp C_VOLUME_UP      &msc SCRL_DOWN  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mt HOME PAGE_UP
-             &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mt END PAGE_DOWN
-&kp C_POWER  &none  &none           &none           &none            &kp K_MUTE           &kp LA(F4)      &mt LC(F5) F5   &kp F11         &kp F12          &kp F6             &kp K_LOCK
-                                    &none           &to 2            &none                &none           &to 0           &kp RIGHT_GUI
-            >;
-
+        Navigation {
             label = "NAV";
+            bindings = <
+             &none  &kp TAB         &kp UP_ARROW    &kp LEFT_SHIFT   &kp C_VOLUME_UP      &msc SCRL_DOWN  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mt HOME PAGE_UP
+             &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN    &msc SCRL_UP    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mt END PAGE_DOWN
+&kp C_POWER  &none  &none           &mt LC(F5) F5   &none            &kp K_MUTE           &none           &msc SCRL_LEFT  &kp LG(SPACE)   &msc SCRL_RIGHT  &none              &kp K_LOCK
+                                    &none           &to 2            &kp LEFT_CONTROL     &kp RIGHT_ALT   &to 0           &kp RIGHT_GUI
+            >;
         };
 
         Math {
