@@ -108,6 +108,11 @@
             bindings = <&kp TAB>;
             key-positions = <1 2>;
         };
+
+        r_middle_click {
+            bindings = <&mkp MCLK>;
+            key-positions = <6 8>;
+        };
     };
 
     keymap {
