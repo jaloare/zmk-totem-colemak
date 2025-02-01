@@ -118,6 +118,16 @@
             bindings = <&kp LC(Z)>;
             key-positions = <22 21>;
         };
+
+        l_cycle_tab_left {
+            bindings = <&kp LS(LC(TAB))>;
+            key-positions = <11 12>;
+        };
+
+        l_cycle_tab_right {
+            bindings = <&kp LC(TAB)>;
+            key-positions = <12 13>;
+        };
     };
 
     keymap {
