@@ -128,6 +128,16 @@
             bindings = <&kp RC(LEFT_ARROW)>;
             key-positions = <17 16>;
         };
+
+        l_cycle_desktop_right {
+            bindings = <&kp LC(LA(RIGHT_ARROW))>;
+            key-positions = <11 12 13>;
+        };
+
+        l_cycle_desktop_left {
+            bindings = <&kp LC(LA(LEFT_ARROW))>;
+            key-positions = <1 2 3>;
+        };
     };
 
     keymap {
