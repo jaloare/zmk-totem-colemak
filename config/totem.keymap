@@ -84,11 +84,6 @@
             key-positions = <29 30 28>;
         };
 
-        r_f11 {
-            bindings = <&kp F11>;
-            key-positions = <19 18 17>;
-        };
-
         l_cut {
             bindings = <&kp LC(X)>;
             key-positions = <22 23 21>;
@@ -109,11 +104,6 @@
             key-positions = <1 2>;
         };
 
-        r_middle_click {
-            bindings = <&mkp MCLK>;
-            key-positions = <6 8>;
-        };
-
         l_undo {
             bindings = <&kp LC(Z)>;
             key-positions = <22 21>;
@@ -127,6 +117,11 @@
         l_cycle_tab_right {
             bindings = <&kp LC(TAB)>;
             key-positions = <12 13>;
+        };
+
+        r_end {
+            bindings = <&kp END>;
+            key-positions = <18 17>;
         };
     };
 
