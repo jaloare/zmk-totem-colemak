@@ -123,6 +123,11 @@
             bindings = <&kp END>;
             key-positions = <18 17>;
         };
+
+        r_previous_word {
+            bindings = <&kp RC(LEFT_ARROW)>;
+            key-positions = <17 16>;
+        };
     };
 
     keymap {
