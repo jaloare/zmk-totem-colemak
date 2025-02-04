@@ -138,6 +138,11 @@
             bindings = <&kp LC(LA(LEFT_ARROW))>;
             key-positions = <1 2 3>;
         };
+
+        r_next_word {
+            bindings = <&kp LC(RIGHT_ARROW)>;
+            key-positions = <16 18>;
+        };
     };
 
     keymap {
