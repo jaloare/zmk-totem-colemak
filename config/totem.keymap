@@ -121,7 +121,7 @@
 
         r_end {
             bindings = <&kp END>;
-            key-positions = <18 17>;
+            key-positions = <18 17 35>;
         };
 
         r_previous_word {
@@ -139,9 +139,14 @@
             key-positions = <1 2 3>;
         };
 
+        r_start {
+            bindings = <&kp HOME>;
+            key-positions = <17 16 35>;
+        };
+
         r_next_word {
             bindings = <&kp LC(RIGHT_ARROW)>;
-            key-positions = <16 18>;
+            key-positions = <18 17>;
         };
     };
 
