@@ -14,7 +14,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
 #define NAV  1
@@ -173,10 +172,10 @@
         Navigation {
             label = "NAV";
             bindings = <
-             &none  &kp TAB         &kp UP_ARROW    &kp LEFT_SHIFT   &kp C_VOLUME_UP      &msc SCRL_DOWN          &mkp LCLK       &mmv MOVE_UP             &mkp RCLK        &mt HOME PAGE_UP
-             &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN    &msc SCRL_UP            &mmv MOVE_LEFT  &mmv MOVE_DOWN           &mmv MOVE_RIGHT  &mt END PAGE_DOWN
-&kp C_POWER  &none  &none           &mt LC(F5) F5   &none            &kp K_MUTE           &kp RIGHT_ALT           &msc SCRL_LEFT  &kp LG(SPACE)            &msc SCRL_RIGHT  &kp RIGHT_COMMAND  &kp K_LOCK
-                                    &none           &to 2            &kp LEFT_CONTROL     &kp LA(LC(LEFT_ARROW))  &to 0           &kp LA(LC(RIGHT_ARROW))
+       &none  &none           &kp UP_ARROW    &none            &kp C_VOLUME_UP      &mt HOME PAGE_UP        &mkp LCLK       &mmv MOVE_UP             &mkp RCLK        &none
+       &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp C_VOLUME_DOWN    &mt END PAGE_DOWN       &mmv MOVE_LEFT  &mmv MOVE_DOWN           &mmv MOVE_RIGHT  &none
+&none  &none  &none           &none           &none            &kp K_MUTE           &none                   &none           &none                    &none            &none  &none
+                              &none           &none            &none                &kp LA(LC(LEFT_ARROW))  &to 0           &kp LA(LC(RIGHT_ARROW))
             >;
         };
 
