@@ -180,7 +180,7 @@
                          &none           &none           &kp UP_ARROW    &none            &none           &mt HOME PAGE_UP        &mkp LCLK       &mmv MOVE_UP             &mkp RCLK        &none
                          &none           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none           &mt END PAGE_DOWN       &mmv MOVE_LEFT  &mmv MOVE_DOWN           &mmv MOVE_RIGHT  &none
 &mt LEFT_CONTROL ESCAPE  &kp LEFT_SHIFT  &none           &none           &none            &none           &none                   &none           &none                    &none            &none  &none
-                                                         &kp LEFT_GUI    &to 2            &kp LEFT_ALT    &kp LA(LC(LEFT_ARROW))  &to 0           &kp LA(LC(RIGHT_ARROW))
+                                                         &kp LEFT_GUI    &to 0            &kp LEFT_ALT    &kp LA(LC(LEFT_ARROW))  &to 0           &kp LA(LC(RIGHT_ARROW))
             >;
         };
 
